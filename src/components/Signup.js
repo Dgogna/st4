@@ -8,13 +8,13 @@ const Signup = () => {
     const context=useContext(noteContext);
     const {getUser}=context;
 
-
+    const host="http://localhost:5000";
 
     const [credentials,setCredentials]=useState({name:"" , email:"",password:""});
     const handleSubmit=async (e)=>{
         e.preventDefault();
         // console.log(credentials);
-        const response = await fetch("https://agile-fortress-39061.herokuapp.com/api/auth/createuser", {
+        const response = await fetch(`${host}/api/auth/createuser`, {
             method: 'POST', 
             mode: 'cors', 
             cache: 'no-cache', 

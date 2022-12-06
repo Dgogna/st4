@@ -4,8 +4,8 @@ import NoteContext from "./noteContext";
 
 const NoteState = (props)=>{
 
-    const host="https://agile-fortress-39061.herokuapp.com"
-    // const host="http://localhost:5000";
+    // const host="https://agile-fortress-39061.herokuapp.com"
+    const host="http://localhost:5000";
 
     const notesInitial=[];
 
